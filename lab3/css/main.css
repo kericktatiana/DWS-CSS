@@ -1,0 +1,139 @@
+/* <h1> padding, create some boxed, style and move text, make a gallery */
+
+
+body{
+	color: #d3d0cb;
+	font-family: "Arial Narrow", Arial, Serif; 
+	font-size: 17px;
+	background: #301e0c url(../img/Header.png) repeat-x;
+	margin:0;
+	padding:0;
+	}
+
+h1{
+	color: #e8b965;
+	font-family: "Arial Black", Arial, Serif;
+	font-size: 50px;
+	padding-left: 50px;
+	}
+	
+h2{
+	color: #e8b965;
+	font-family: "Arial Black", Arial, Serif;
+	font-size: 35px; 
+	margin: 5px;
+	padding-bottom: 5px
+	}
+
+h3{
+	color: #e8b965;
+	font-family: "Arial Black", Arial, Serif;
+	font-size: 30px;
+	margin: 0px;
+	}
+
+
+
+p{
+	text-indent: 10px;
+	word-spacing: 3px;
+	vertical-align: 10%
+	
+	}
+
+						/* Navigation UL */
+
+ul#navi{
+	font-family: "Arial Black", Arial, Serif;
+	font-size: 17px;
+	font-weight: bold;
+	list-style-type: none;
+	margin-right: 20px;
+	
+	}
+
+li#navi{
+	float: left;
+	padding-right: 10px;
+	padding-left: 10px;	
+	padding-bottom: 10px;
+	padding-top: 10px;
+	}
+
+Nav{
+	display: inline;
+	padding-right: 32px;
+	padding-left: 32px;
+	display: block;
+	
+	}	
+	
+#nav a:link{
+	color: #000000;
+	text-decoration: none;
+	border-bottom: 1px solid;
+	
+	}
+
+#nav a:visited{
+	color: #ae6517;
+	
+	}
+	
+#nav a:hover{
+	color: #693d0e;
+	border-bottom: none;
+	}
+
+#nav a:active{
+	color: #b2916d;
+	border-bottom: none;
+	}
+	
+					/*Images UL*/
+
+ul#gallery{
+	list-style-type: none;
+	display: inline;
+	padding-right: 35px;
+	padding-left: 35px;
+	display: block;
+	}
+
+
+li#images{
+	float: left;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	}
+
+
+					/* Floating */
+
+Nav{
+	float: right;
+	}
+	
+section{
+	float: left;
+	background: rgba(0, 0, 0, .50);
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 50px;
+	width: 500px
+	}
+
+setion#two{
+	float: right;
+	background: rgba(0, 0, 0, .50);
+	width: 500px;
+	margin-right: 50px
+	}
+
+div#img{
+	float: left;
+	padding: 10px;
+	}
+
