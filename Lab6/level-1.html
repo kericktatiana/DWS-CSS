@@ -1,50 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
 	<title>Fancy Form Design: Advanced Search</title>
-	
+	<link rel="stylesheet" href="css/levelone.css">
 </head>
-<body id="advanced-search">
-	<!-- Container -->	
-	<div id="container"><div id="container-inner">
 
+<body id="advanced search">
+	<div id="container">
 		<h1>Advanced Search</h1>
 		<form action="#" method="get">
+		<div id="search">
 			<fieldset>
-				<!-- Search for: -->
-				<div>
-					<label for="words">Search for</label>
-					<select id="words">
-					  <option>All of these words</option>
-					  <option>Any of these words</option>
-					</select>
-					
-					<label for="keywords">Keywords</label><input type="text" name="keywords" value="" id="keywords" />
-					
-				</div>
-				
-				<!-- Search in -->
-				<div>
-					<label for="searchin">Search in</label>
-					
-					<select id="searchin">
-					  <option>People</option>
-					  <option>Places</option>
-					  <option>Sports</option>
-					</select>
-				</div>
-				
-				
-				<!-- Controls -->
-				<div class="controls">
-					<input id="submit" name="submit" type="submit" value="Search" />
-				</div>
+				<h3>Enter words to help your search</h3>
+				<div id="key">
+					<label for="keywords">Keywords</label>
+					<input id="keywords" name="keywords" type="text" autofocus/> 
+				</div> <!-- key -->	
 			</fieldset>
+		</div> <!-- search -->
+
+		<div id="selects">
+			<fieldset id="dd">
+				<h3>Narrow your results</h3>
+				<div id="searchfor">
+					<label for="dropdown">Search for</label>
+					<select id="dropdown">
+						<option>All of these words</option>
+						<option>Any of these words</option>
+					</select>
+					<label for="searchin">Search in</label>
+					<select id="searchin">
+						<option>People</option>
+						<option>Places</option>
+						<option>Sports</option>
+					</select>
+					<div id="button">
+						<button id="search">Search</button>
+					</div> <!-- button -->
+				</div> <!-- searchfor -->
+
+				
+			</fieldset>
+		</div> <!-- selects -->
 		</form>
-			
-	</div></div>	<!-- /Container -->
-	
+	</div> <!-- container -->
+
 </body>
 </html>
