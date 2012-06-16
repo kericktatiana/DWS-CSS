@@ -1,41 +1,37 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>
-      Fancy Form Design: Feedback
-    </title>
-    
-		
-  </head>
-  <body id="feedback">
-    <!-- Container -->
-    <div id="container">
-      <div id="container-inner">
-        <h1>
-          Feedback
-        </h1>
-        <form action="#" method="get">
-          <fieldset>
-            <!-- Details -->
-            <div>
-              <label for="words">Your name</label> <input type="text" name="name" value="" id="name" />
-            </div><!-- Email -->
-            <div>
-              <label for="email">Your email address</label> <input type="text" name="email" value="" id="email" />
-            </div><!-- Feedback -->
-            <div>
-              <label for="feedback">Your feedback</label> 
-              <textarea cols="30" rows="6" id="feedback">
-              </textarea>
-            </div><!-- Controls -->
-            <div class="controls">
-              <input id="submit" name="submit" type="submit" value="Submit feedback" />
-            </div>
-          </fieldset>
-        </form>
+<head>
+  <meta http-equiv="content-type" content="text.html" charset="utf-8" />
+  <title>Fancy Form Desgin: Feedback</title>
+  <link rel="stylesheet" href="css/leveltwo.css">
+  <link href='http://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC' rel='stylesheet' type='text/css'><!-- font -->
+</head>
+
+<body>
+  <form action="#" method="get">
+    <fieldset>
+    <legend>Feedback</legend>
+      <div class="name">
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" autofocus />
+      </div><!-- name -->
+
+      <div class="email">
+        <label for="email">Your email address</label>
+        <input id="email" name="name" type="email" />
+      </div> <!-- email -->
+
+      <div class="feedback">
+        <label for="feedback">Your feedback</label>
+        <textarea id="feedback" cols="30" rows="6"></textarea> 
       </div>
-    </div><!-- /Container -->
-  </body>
-</html>
+
+      <div class="button">
+        <button id="submut">Submit Feedback</button>
+      </div>
+
+    </fieldset>
+  </form>
+</body>
+</html

@@ -2,115 +2,110 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8">
 	<title>Fancy Form Design: Sign Up</title>
-	
-	<!-- CSS -->
-	
-	
-	<!-- JS -->
+	<link rel="stylesheet" href="css/levelthree.css">
 </head>
-<body id="sign-up">
-	<!-- Container -->	
-	<div id="container"><div id="container-inner">
 
-		<h1>Sign Up</h1>
-		<p class="log-in">Already a member? <a href="#">Log in</a>.</p>
-		<form action="#" method="get">
-			<fieldset>
-				<p class="introduction">Hi there! We're excited to have you as a part of our community. To get started, please create an account. <strong>All fields are required</strong></p>
-				<!-- Email -->
+<body>
+	<div>
+	<h1>Sign Up</h1>
+	<p>
+		Already a member? <a href="#">Log in</a>
+	</p>
+	<form>
+		<fieldset>
+			<p>
+				Hi there! We're excited to have you as a part of out community. To get started, please create an account. <strong>All fields are required</strong>
+			</p>
+
+			<div>
+				<label for="email">Your email address</label>
+				<input id="email" name="email" type="email" required/>
+			</div>
+
+			<div>
+				<label for="password">Create a password</label>
+				<input id="password" name="password" type="password" required/>
+			</div>
+
+			<div>
+				<label for="passwordconfirm">Conform your password</label>
+				<input id="passwordconfirm" name="passwordconfirm" type="password" required/>
+			</div>
+
+			<div>
+				<label for="profile_link"> Your profile link</label>
+				<span class="profile_link-prefix">fitandawesome.com</span>
+				<input id="profile_link" name="profile_link" type="text" required/>
+			</div>
+
+			<fieldset id="dob">
+				<legend><span>Birth date</span></legend>
+				<!-- month -->
 				<div>
-					<label for="email">Your email address</label>
-					<input type="text" name="email" id="email" />
+					<label for="dob_month">Month</label>
+					<select id="dob_month" name="dob_month">
+						<option>- Month -</option>
+						<option value="Janurary">Janurary</option>
+						<option value="Febuary">Febuary</option>
+						<option value="March">March</option>
+						<option value="April">April</option>
+						<option value="May">May</option>
+						<option value="June">June</option>
+						<option value="July">July</option>
+						<option value="August">August</option>
+						<option value="September">September</option>
+						<option value="October">October</option>
+						<option value="November">November</option>
+						<option value="December">December</option>
+					</select>
 				</div>
-				
-				<!-- Password -->
+
+				<!-- day -->
 				<div>
-					<label for="password">Create Password</label>
-					<input type="password" name="password" id="password" />
+					<label for="dob_day">Day</label>
+					<select id="dob_day" name="dob_day">
+						<option>- Day -</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>
 				</div>
-				
-				<!-- Password Confirmation -->
+
+				<!-- year -->
 				<div>
-					<label for="password_confirmation">Confirm Password</label>
-					<input type="password" name="password_confirmation" id="password_confirmation" />
-				</div>
-				
-				<!-- Profile Link -->
-				<div id="field-profile-link">
-					<label for="profile_link">Your profile link</label>
-					<span class="profile-link-prefix">fitandawesome.com/</span>
-					<input type="text" name="profile_link" id="profile_link" class="required" />
-				</div>
-				
-				<!-- DOB -->
-				<fieldset id="section-dob">
-					<legend><span>Birth date</span></legend>
-					<!-- Month -->
-					<div>
-						<label for="dob_month">Month</label>
-						<select name="dob_month" id="dob_month">
-							<option> - Month - </option>
-							<option value="January">January</option>
-							<option value="Febuary">Febuary</option>
-							<option value="March">March</option>
-							<option value="April">April</option>
-							<option value="May">May</option>
-							<option value="June">June</option>
-							<option value="July">July</option>
-							<option value="August">August</option>
-							<option value="September">September</option>
-							<option value="October">October</option>
-							<option value="November">November</option>
-							<option value="December">December</option>
-						</select>
-					</div>
-					
-					<!-- Day -->
-					<div>
-						<label for="dob_day">Day</label>
-						<select name="dob_day" id="dob_day">
-							<option> - Day - </option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="4">4</option>
-							<option value="5">5</option>
-							<option value="6">6</option>
-							<option value="7">7</option>
-							<option value="8">8</option>
-							<option value="9">9</option>
-							<option value="10">10</option>
-							<option value="11">11</option>
-							<option value="12">12</option>
-							<option value="13">13</option>
-							<option value="14">14</option>
-							<option value="15">15</option>
-							<option value="16">16</option>
-							<option value="17">17</option>
-							<option value="18">18</option>
-							<option value="19">19</option>
-							<option value="20">20</option>
-							<option value="21">21</option>
-							<option value="22">22</option>
-							<option value="23">23</option>
-							<option value="24">24</option>
-							<option value="25">25</option>
-							<option value="26">26</option>
-							<option value="27">27</option>
-							<option value="28">28</option>
-							<option value="29">29</option>
-							<option value="30">30</option>
-							<option value="31">31</option>
-						</select>
-					</div>
-					
-					<!-- Year -->
-					<div>
-						<label for="dob_year">Year</label>
-						<select name="dob_year" id="dob_year">
-							<option> - Year - </option>
+					<label for="dob_year">Year</label>
+					<select id="dob_year" name="year">
+						<option> - Year - </option>
 							<option value="2004">2004</option>
 							<option value="2003">2003</option>
 							<option value="2002">2002</option>
@@ -216,31 +211,29 @@
 							<option value="1902">1902</option>
 							<option value="1901">1901</option>
 							<option value="1900">1900</option>
-						</select>
-					</div>
-					<em class="note">This is hidden by default from your profile.</em>
-				</fieldset>
-				
-				<!-- Terms of Service -->
-				<div id="field-agree-tos">
-					<ul>
-						<li>
-							<label>
-								<input type="checkbox" id="agree_tos" value="yes" />
-								I have read and agree to the <a href="#">Terms of Service</a>.
-							</label>
-						</li>
-					</ul>
+					</select>
 				</div>
-				
-				<!-- Controls -->
-				<div class="controls">
-					<input id="submit" name="submit" type="submit" value="Create Profile" />
-				</div>
+				<em>This is hidden by default from your profile.</em>
 			</fieldset>
-		</form>
-			
-	</div></div>	<!-- /Container -->
-	
+
+			<!-- Terms of service -->
+			<div>
+				<ul>
+					<li>
+						<label>
+							<input id="agree_to" value="yes" type="checkbox" />
+							I have read and agree to the <ahref="#">Terms of Service</a>
+						</label>
+					</li>
+				</ul>
+			</div>
+
+			<div>
+				<button id="submit" name="submit" value="Create Profile" />
+			</div>
+
+		</fieldset>
+	</form>
+	<div>	
 </body>
 </html>
