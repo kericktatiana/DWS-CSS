@@ -8,19 +8,126 @@ h1{
 	font-family: 'Shadows Into Light', cursive;
 	margin-left: 30px;
 	font-size: 40px;
-	word-spacing: 10px;
+	letter-spacing: 3px;
 }
 
 fieldset{
 	border: none;
 }
 
+label{
+	display: block;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-left: 10px;
+}
+
+
+input{
+	width: 250px;
+	margin-left: 20px;
+}
+
 div#main{
-	width: 400px;
+	width: 350px;
 	float: left;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+					Photo Upload
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+div#default{
+	padding: 15px 10px 5px 5px;
+	margin-left: 10px;
+	float: left;
+}
+
+div#profile_photo label{
+	margin-left: -40px;
+}
+
+div#profile_photo input{
+	margin-left: -30px;
+	width: 200px;
+}
+
+div#profile_photo{
+	margin-left: 50px;
+	padding: 5px;
 }
 
 div#sidebar{
 	widhth: 400px;
 	float: left;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+					Gender
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+legend{
+	display: block;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+
+}
+
+div#gender label{
+	display: inline;
+	font-family: Helvetica;
+	font-size: 17;
+	font-weight: normal;
+}
+
+input#female{
+	width: 20px;
+	margin-left: 20px;
+}
+
+input#male{
+	width: 20px;
+}
+
+textarea{
+	margin-left: 20px;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+					URL/ Site name
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+div#websiteurl input{
+	width: 330px;
+}
+
+div#websitename input{
+	width: 330px;
+}
+
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+					Button
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+button{
+	margin: 10px 0px 0px 190px;
+	border: none;
+	background: url(../images/button.png) no-repeat;
+	height: 48px;
+	width: 190px;
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: bold;
+	font-size: 20px;
+	padding-right: 20px;
+}
+
+button:hover{
+	background-position: 0px -96px;
+}
+
+button:active{
+	background-position: 0px -144;
 }

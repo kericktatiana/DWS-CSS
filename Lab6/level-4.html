@@ -12,12 +12,14 @@
     <h1>Edit Your Profile</h1>
     <form action="#" method="get">
       <fieldset>
+        <div id="default"><img src="images/default.jpg" alt="default profile picture until you upload a picture of yourself" width="250" height="300" /></div><!-- default -->
         <div id="main">
-        <div>
+        <div id="profile_photo">
           <label for="your_photo">Your profile photo</label>
-          <input id="your_photo" name="your_profile" type="file"/>
-          <img src="images/default.jpg" alt="default profile picture until you upload a picture of yourself" width="200" height="200" />
-        </div>
+          <input id="your_photo" name="your_profile" type="file" />
+        </div> <!-- profile photo -->
+          
+        
 
         <div>
           <label for="firstname">First Name</label>
@@ -29,20 +31,21 @@
           <input id="lastname" name="lastname" type="text" />
         </div>
 
-        <div>
+        <div id="gender">
           <fieldset>
             <legend>Gender</legend>
-            <label for="female">Female</label>
-            <input id="female" name="gender" value="female" type="radio" />
-            <label for="male">Male</label>
-            <input id="male" name="gender" value="male" type="radio" />
+            <label for="female">
+              <input id="female" name="gender" value="female" type="radio" />
+            Female</label>
+            <label for="male">
+              <input id="male" name="gender" value="male" type="radio" />
+            Male</label>
           </fieldset>
-        </div>
+        </div><!-- gender -->
 
         <fieldset id="dob">
           <legend><span>Birth date</span></legend>
-          <div> <!-- month -->
-            <label for="dob_month">Month</label>
+          <div id="birth"> 
             <select id="dob_month" name="dob_month">
               <option>- Month -</option>
               <option value="January">January</option>
@@ -57,10 +60,7 @@
               <option value="October">October</option>
               <option value="November">November</option>
             </select>
-          </div><!-- month -->
 
-          <div> <!-- day -->
-            <label for="dob_day">Day</label>
             <select id="dob_day" name="dob_day">
               <option>- Day -</option>
               <option value="1">1</option>
@@ -95,10 +95,7 @@
               <option value="30">30</option>
               <option value="31">31</option>
             </select>
-          </div><!-- day -->
-
-          <div> <!-- year -->
-            <label for="dob_year">Year</label>
+          
             <select id="dob_year" name="dob_year">
               <option> - Year - </option>
               <option value="2004">2004</option>
@@ -207,8 +204,8 @@
               <option value="1901">1901</option>
               <option value="1900">1900</option>
             </select>      
-          </div><!-- year -->
-          <em>This is hidden by default from your profile.</em>
+          </div> <!-- birth -->
+          <em><small>This is hidden by default from your profile.</small></em>
         </fieldset> <!-- dob -->
       </div> <!-- main -->
 
@@ -218,15 +215,15 @@
           <textarea id="about_you" name="about_you" rows="8" cols="40"></textarea>
         </div>
 
-        <div>
+        <div id="websiteurl">
           <label for="website_url">Website URL</label>
           <input id="website_url" name="website_url" type="text" />
-        </div>
+        </div><!-- websiteurl -->
 
-        <div>
+        <div id="websitename">
           <label for="website_name">Website name</label>
           <input id="website_name" name="website_name" type="text" />
-        </div>
+        </div> <!-- websitename -->
 
         <div id="button">
           <button id="submit" name="submit" value="Create Profile">Create Profile</button>
