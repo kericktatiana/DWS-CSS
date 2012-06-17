@@ -19,44 +19,32 @@ fieldset{
 	border: 0px;
 }
 
-fieldset#dd{
-	width: 200px;
-}
 
 
 label{
-	display: block;
+	display: inline;
 	width: 200px;
 	margin-left: 20px;
 	padding: 5px;
 }
 
 input{
-	margin-left: 40px;
+	margin-left: 10px;
 }
 
-
 select{
-	margin-left: 40px;
+	margin-left: 10px;
+}
+
+select#searchin{
+	margin-left: 15px;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 			divs
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
-div#search{
-	width: 300px;
-	float: left;
-}
 
-div#select{
-	width: 300px;
-	float: right;
-}
-
-div#searchfor{
-	width: 200px;
-}
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 			button properties
