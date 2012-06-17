@@ -5,15 +5,18 @@
   <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
   <title>Fancy Form Design: Edit Profile</title>
   <link rel="stylesheet" href="css/levelfour.css">
+  <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'><!-- font -->
 </head>
 <body>
-  <div>
-    <h1>Edit Profile</h1>
+  <div id="whole">
+    <h1>Edit Your Profile</h1>
     <form action="#" method="get">
       <fieldset>
+        <div id="main">
         <div>
           <label for="your_photo">Your profile photo</label>
           <input id="your_photo" name="your_profile" type="file"/>
+          <img src="images/default.jpg" alt="default profile picture until you upload a picture of yourself" width="200" height="200" />
         </div>
 
         <div>
@@ -207,7 +210,9 @@
           </div><!-- year -->
           <em>This is hidden by default from your profile.</em>
         </fieldset> <!-- dob -->
+      </div> <!-- main -->
 
+      <div id="sidebar">
         <div>
           <label for ="about_you">About you</label>
           <textarea id="about_you" name="about_you" rows="8" cols="40"></textarea>
@@ -226,9 +231,10 @@
         <div id="button">
           <button id="submit" name="submit" value="Create Profile">Create Profile</button>
         </div>
+      </div> <!-- sidebar -->
 
       </fieldset>
     </form>
-  </div>
+  </div> <!-- whole -->
 </body>
 </html>

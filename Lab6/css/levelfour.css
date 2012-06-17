@@ -1,0 +1,26 @@
+body{
+	background: url(../images/background.jpg);
+	margin-top: 50px;
+	
+}
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	margin-left: 30px;
+	font-size: 40px;
+	word-spacing: 10px;
+}
+
+fieldset{
+	border: none;
+}
+
+div#main{
+	width: 400px;
+	float: left;
+}
+
+div#sidebar{
+	widhth: 400px;
+	float: left;
+}
