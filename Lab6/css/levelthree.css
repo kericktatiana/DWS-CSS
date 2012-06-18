@@ -2,28 +2,107 @@ body{
 	background: url(../images/background3.jpg);
 }
 
-h1{
+div#whole{
 	background-color: rgba(84, 83, 98, .7);
-	border-radius: 10px;
 	width: 500px;
-	height: 60px;
-	font-family: 'Londrina Sketch', cursive;
+	border-radius: 10px;
+}
+
+h1{
+	width: 500px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Chicle', cursive;
 	float: left;
 }
 
-form{
+p#member{
 	width: 500px;
-	background-color: rgba(84, 83, 98, .7);
-	border-radius: 10px;
+	float: none;
+	clear: left;
+	text-align: center;
+	
 }
 
 fieldset{
-	margin-top: 90px;
 	border: none;
 	float: none;
 	clear: left;
+	margin: 0 auto;
 }
 
-p#member{
-	float: ;
+p#greeting{
+	text-align: center;
 }
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+				Form Properties
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+label{
+	display: block;
+}
+
+span{
+	display: block;
+	margin: 0px 0px 0px 50px;
+	font: 20px Arial;
+}
+
+input{
+	width: 300px;
+	height: 20px;
+	margin: 0px 0px 5px 50px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+input#agree_to{
+	width: 20px;
+	margin: 0px 0px 0px 50px;
+}
+
+select{
+	margin: 0px 0px 0px 37px;
+}
+
+em{
+	margin: 0px 0px 0px 40px;
+}
+
+/*	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	
+				Button
+=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	=	*/
+
+button {
+	margin: 5px 0px 0px 110px;
+   border-top: none;
+   background: #442f4f;
+   width: 200px;
+   background: -webkit-gradient(linear, left top, left bottom, from(#c48be0), to(#442f4f));
+   background: -webkit-linear-gradient(top, #c48be0, #442f4f);
+   background: -moz-linear-gradient(top, #c48be0, #442f4f);
+   background: -ms-linear-gradient(top, #c48be0, #442f4f);
+   background: -o-linear-gradient(top, #c48be0, #442f4f);
+   padding: 7px 14px;
+   border: none;
+   -webkit-border-radius: 17px;
+   -moz-border-radius: 17px;
+   border-radius: 17px;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #080808;
+   font-size: 16px;
+   font-family: 'Chicle', cursive;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #3d1845;
+   background: #3d1845;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #d169fa;
+   background: #d169fa;
+   }

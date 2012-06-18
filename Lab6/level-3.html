@@ -2,10 +2,10 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<meta http-equiv="content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<title>Fancy Form Design: Sign Up</title>
 	<link rel="stylesheet" href="css/levelthree.css">
-	<link href='http://fonts.googleapis.com/css?family=Londrina+Sketch' rel='stylesheet' type='text/css'> <!-- font -->
+	<link href='http://fonts.googleapis.com/css?family=Chicle' rel='stylesheet' type='text/css'> <!-- font -->
 </head>
 
 <body>
@@ -16,36 +16,35 @@
 	</p>
 	<form>
 		<fieldset>
-			<p>
+			<p id="greeting">
 				Hi there! We're excited to have you as a part of out community. To get started, please create an account. <strong>All fields are required</strong>
 			</p>
 
 			<div>
-				<label for="email">Your email address</label>
-				<input id="email" name="email" type="email" required/>
+				<!-- <label for="email">Your email address</label> -->
+				<input id="email" name="email" type="email" required placeholder="Your email address" />
 			</div>
 
 			<div>
-				<label for="password">Create a password</label>
-				<input id="password" name="password" type="password" required/>
+				<!-- <label for="password">Create a password</label> -->
+				<input id="password" name="password" type="password" required placeholder="Create a password" />
 			</div>
 
 			<div>
-				<label for="passwordconfirm">Conform your password</label>
-				<input id="passwordconfirm" name="passwordconfirm" type="password" required/>
+				<!-- <label for="passwordconfirm">Confirm your password</label> -->
+				<input id="passwordconfirm" name="passwordconfirm" type="password" required placeholder="Confirm your password"/>
 			</div>
 
 			<div>
-				<label for="profile_link"> Your profile link</label>
-				<span class="profile_link-prefix">fitandawesome.com</span>
-				<input id="profile_link" name="profile_link" type="text" required/>
+				<!-- <label for="profile_link"> Your profile link</label> -->
+				<span class="profile_link-prefix">fitandawesome.com/</span>
+				<input id="profile_link" name="profile_link" type="text" required  placeholder="Your Profile link"/>
 			</div>
 
 			<fieldset id="dob">
-				<legend><span>Birth date</span></legend>
-				<!-- month -->
-				<div>
-					<label for="dob_month">Month</label>
+				<span>Birth date</span>
+				<div id="birthday">
+					<!-- <label for="dob_month">Month</label> -->
 					<select id="dob_month" name="dob_month">
 						<option>- Month -</option>
 						<option value="Janurary">Janurary</option>
@@ -61,11 +60,8 @@
 						<option value="November">November</option>
 						<option value="December">December</option>
 					</select>
-				</div>
-
-				<!-- day -->
-				<div>
-					<label for="dob_day">Day</label>
+				
+					<!-- <label for="dob_day">Day</label> -->
 					<select id="dob_day" name="dob_day">
 						<option>- Day -</option>
 						<option value="1">1</option>
@@ -100,11 +96,9 @@
 						<option value="30">30</option>
 						<option value="31">31</option>
 					</select>
-				</div>
+				
 
-				<!-- year -->
-				<div>
-					<label for="dob_year">Year</label>
+					<!-- <label for="dob_year">Year</label> -->
 					<select id="dob_year" name="year">
 						<option> - Year - </option>
 							<option value="2004">2004</option>
@@ -213,20 +207,14 @@
 							<option value="1901">1901</option>
 							<option value="1900">1900</option>
 					</select>
-				</div>
-				<em>This is hidden by default from your profile.</em>
+				</div><!-- birthday -->
+				<em><small>This is hidden by default from your profile.</small></em>
 			</fieldset>
 
 			<!-- Terms of service -->
 			<div>
-				<ul>
-					<li>
-						<label>
-							<input id="agree_to" value="yes" type="checkbox" />
-							I have read and agree to the <ahref="#">Terms of Service</a>
-						</label>
-					</li>
-				</ul>
+				<input id="agree_to" value="yes" type="checkbox" />
+				I have read and agree to the <a href="#">Terms of Service</a>
 			</div>
 
 			<div>
