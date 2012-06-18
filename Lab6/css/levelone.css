@@ -2,24 +2,38 @@
 			regular
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 h1{
-	padding: 0px;
-	margin: 0px;
+	padding: 5px;
+	margin: 0px 0px 0px 5px;
 }
 
 h3{
 	padding: 0px;
-	margin: 0px;
+	margin: 0px 0px 0px 10px;
 }
 
 /* = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
 			forms
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
+div#container{
+	background-color: rgba(171, 171, 173, .5);
+	width: 800px;
+	border: 2px solid #7f7dab;
+	border-radius: 20px;
+}
+
+div#search{
+	width: 300px;
+	float: left;
+}
+
+div#selects{
+	width: 600px;
+}
+
 fieldset{
 	border: 0px;
 }
-
-
 
 label{
 	display: inline;
@@ -51,59 +65,38 @@ select#searchin{
 = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = */
 
 div#button{
-	margin-left: 130px;
+	float: right;
 	margin-top: 10px;
 }
 
-button{
-	color: #000000;
-	text-shadow: 0 1px 0 #009966;
-	width: 75px;
-	height: 30px;
-	text-decoration: none;
-	position: relative;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	padding: 0px 5px 0px 5px;
-	background: #009933;
-	background: -webkit-linear-gradient(top, #009966 0%, #009933 50%);
-    background: -moz-linear-gradient(top, #009966 0%, #009933 50%);
-    background: -o-linear-gradient(top, #009966 0%, #009933 50%);
-    background: -ms-linear-gradient(top, #009966 0%, #009933 50%);
-    background: linear-gradient(top, #009966 0%, #009933 50%);
-    -webkit-border-radius: 30px 30px 30px 30px;
-    -moz-border-radius: 30px 30px 30px 30px;
-    border-radius: 30px 30px 30px 30px;
-    -webkit-box-shadow: 0px 3px 6px rgba(0, 51, 0, 0.6);
-    -moz-box-shadow: 0px 3px 6px rgba(0, 51, 0, 0.6);
-    box-shadow: 0px 3px 6px rgba(0, 0, 51, 0.6);
-    margin-bottom: 10px;
-}
-
-button :hover{
-	color: #000000;
-	text-shadow: 0 1px 0 #009966;
-	width: 75px;
-	height: 30px;
-	text-decoration: none;
-	position: relative;
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	padding: 0px 5px 0px 5px;
-	background: #006633;
-	background: -webkit-linear-gradient(top, #003333 0%, #006633 50%);
-    background: -moz-linear-gradient(top, #003333 0%, #006633 50%);
-    background: -o-linear-gradient(top, #003333 0%, #006633 50%);
-    background: -ms-linear-gradient(top, #003333 0%, #006633 50%);
-    background: linear-gradient(top, #003333 0%, #006633 50%);
-    -webkit-border-radius: 30px 30px 30px 30px;
-    -moz-border-radius: 30px 30px 30px 30px;
-    border-radius: 30px 30px 30px 30px;
-    -webkit-box-shadow: 0px 3px 6px rgba(0, 51, 0, 0.6);
-    -moz-box-shadow: 0px 3px 6px rgba(0, 51, 0, 0.6);
-    box-shadow: 0px 3px 6px rgba(0, 0, 51, 0.6);
-    margin-bottom: 10px;
-}
+button {
+   background: #4b4a66;
+   width: 100px;
+   height: 30px;
+   background: -webkit-gradient(linear, left top, left bottom, from(#7f7dab), to(#4b4a66));
+   background: -webkit-linear-gradient(top, #7f7dab, #4b4a66);
+   background: -moz-linear-gradient(top, #7f7dab, #4b4a66);
+   background: -ms-linear-gradient(top, #7f7dab, #4b4a66);
+   background: -o-linear-gradient(top, #7f7dab, #4b4a66);
+   padding: 6px 12px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   border: none;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+button:active {
+   border-top-color: #b8b6fc;
+   background: #b8b6fc;
+   }
 
